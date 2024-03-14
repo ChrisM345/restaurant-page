@@ -1,6 +1,5 @@
-import Pancakes from './pancakes.jpg';
-
-const divContent = (() => {
+export function homeContent() {
+    console.log("homecontent")
     const content = document.querySelector("#content");
     const header = document.createElement('h3')
     header.textContent = 'Pancake Bee Cafe'
@@ -15,4 +14,6 @@ const divContent = (() => {
     content.append(header)
     // content.append(myImage)
     content.append(intro)
-})();
+
+    return content
+}
