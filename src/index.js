@@ -1,4 +1,6 @@
-import {homeContent} from './home.js'
+import { homeContent } from './home.js'
+import { menuContent } from './menu.js';
+import { aboutContent } from './about.js';
 import Pancakes from './pancakes.jpg';
 import './style.css';
 console.log("testing")
@@ -11,6 +13,7 @@ bckground.style.backgroundImage=`url(${Pancakes})`;
 
 const credit = document.createElement('p')
 credit.textContent = 'Image Credit - https://unsplash.com/photos/brown-cookies-on-brown-wooden-table-tk9dBabQde0'
+credit.className = 'class-list'
 bckground.append(credit);
 
 const buttons = document.querySelectorAll("button");
@@ -24,13 +27,13 @@ buttons.forEach((btn) => {
 function switchPage(page){
     switch(page) {
         case 'Home':
-            console.log("home")
+            homeContent();
             break;
         case 'Menu':
-            console.log("menu")
+            menuContent();
             break;
         case 'About':
-            console.log("about")
+            aboutContent();
             break;
     }
 }
