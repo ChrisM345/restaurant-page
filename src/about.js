@@ -2,19 +2,16 @@ export function aboutContent() {
     const content = document.querySelector("#content");
     content.innerHTML = ''
 
-    const header = document.createElement('h2')
+    const header = document.createElement('h3')
     header.textContent = 'About Us!'
 
     const about = document.createElement('p')
-    about.textContent = `We'll make sure you'll want to come back`
+    about.className = 'about-p'
+    about.textContent = `We hope you enjoy your time at our cafe. Any questions, please call us at 123-123-1234`
 
     const address = document.createElement('p')
+    address.className = 'address-p'
     address.innerText = "123 My Street \n My City, My State 12345"
-
-    let teaHTML = `<div class = "menu-item"
-    <h4>Tea</h4>
-    <p>Enjoy a lovely cup of tea and a variety of flavors. Refills are included!</p>
-    <p>$3.00</p>`
 
     content.append(header)
     content.append(about)

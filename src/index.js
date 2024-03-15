@@ -3,7 +3,6 @@ import { menuContent } from './menu.js';
 import { aboutContent } from './about.js';
 import Pancakes from './pancakes.jpg';
 import './style.css';
-console.log("testing")
 
 const contentDiv = document.querySelector('#content')
 homeContent()
@@ -13,7 +12,7 @@ bckground.style.backgroundImage=`url(${Pancakes})`;
 
 const credit = document.createElement('p')
 credit.textContent = 'Image Credit - https://unsplash.com/photos/brown-cookies-on-brown-wooden-table-tk9dBabQde0'
-credit.className = 'class-list'
+credit.className = 'credit-p'
 bckground.append(credit);
 
 const buttons = document.querySelectorAll("button");
